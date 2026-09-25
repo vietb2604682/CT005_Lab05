@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trang giới thiệu thông tin cá nhân</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Phần đầu trang */
+        header {
+            background: linear-gradient(135deg, #2563eb, #06b6d4);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Thanh điều hướng */
+        nav {
+            background-color: #1e293b;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Nội dung chính */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #2563eb;
+            margin-bottom: 20px;
+            border-left: 5px solid #06b6d4;
+            padding-left: 12px;
+        }
+
+        .profile p {
+            margin-bottom: 12px;
+        }
+
+        .profile strong {
+            color: #1e40af;
+        }
+
+        /* Hiển thị PDF */
+        .pdf-container {
+            width: 100%;
+            height: 600px;
+            margin-top: 20px;
+        }
+
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        /* Hiển thị ảnh */
+        .infographic {
+            text-align: center;
+        }
+
+        .infographic img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        /* Hiển thị video */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Nút xem tài liệu */
+        .button {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Chân trang */
+        footer {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Giao diện điện thoại */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 26px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .pdf-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PHẦN ĐẦU TRANG -->
+    <header>
+        <h1>TRANG GIỚI THIỆU CÁ NHÂN</h1>
+        <p>Chào mừng bạn đến với trang web của tôi!</p>
+    </header>
+
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <nav>
+        <a href="#gioithieu">Giới thiệu</a>
+        <a href="#pdf">Tài liệu PDF</a>
+        <a href="#infographic">Infographic</a>
+        <a href="#video">Video</a>
+    </nav>
+
+    <main class="container">
+
+        <!-- PHẦN GIỚI THIỆU CÁ NHÂN -->
+        <section class="section profile" id="gioithieu">
+            <h2>Thông tin cá nhân</h2>
+
+            <p><strong>Họ và tên:</strong> Nguyễn Văn A</p>
+
+            <p><strong>Mã sinh viên:</strong> B2604682</p>
+
+            <p><strong>Lớp:</strong> CT005</p>
+
+            <p><strong>Trường:</strong> Đại học Cần Thơ</p>
+
+            <p><strong>Sở thích:</strong> Công nghệ thông tin, thiết kế website và khám phá công nghệ mới.</p>
+
+            <p>
+                Xin chào! Tôi là sinh viên ngành Công nghệ thông tin.
+                Trang web này được tạo ra nhằm giới thiệu thông tin cá nhân
+                và trình bày các sản phẩm học tập của tôi, bao gồm tài liệu
+                PDF, infographic và video minh họa.
+            </p>
+        </section>
+
+        <!-- SẢN PHẨM 1: PDF -->
+        <section class="section" id="pdf">
+            <h2>Sản phẩm 1: Tài liệu PDF</h2>
+
+            <p>
+                Đây là tài liệu PDF được thực hiện trong quá trình học tập.
+                Bạn có thể xem trực tiếp nội dung tài liệu ngay bên dưới.
+            </p>
+
+            <div class="pdf-container">
+                <iframe
+                    src="Lab05_Ex1.2.pdf"
+                    title="Tài liệu PDF">
+                </iframe>
+            </div>
+
+            <a href="Lab05_Ex1.2.pdf"
+               target="_blank"
+               class="button">
+                Mở tài liệu PDF
+            </a>
+        </section>
+
+        <!-- SẢN PHẨM 2: INFOGRAPHIC -->
+        <section class="section infographic" id="infographic">
+            <h2>Sản phẩm 2: Infographic</h2>
+
+            <p>
+                Đây là hình ảnh infographic minh họa nội dung học tập,
+                được trình bày trực quan và dễ hiểu.
+            </p>
+
+            <img
+                src="Lab05_Ex2.1.png"
+                alt="Infographic minh họa nội dung học tập">
+
+            <p>
+                <a href="Lab05_Ex2.1.png"
+                   target="_blank"
+                   class="button">
+                    Xem ảnh kích thước đầy đủ
+                </a>
+            </p>
+        </section>
+
+        <!-- SẢN PHẨM 3: VIDEO YOUTUBE -->
+        <section class="section" id="video">
+            <h2>Sản phẩm 3: Video YouTube</h2>
+
+            <p>
+                Video minh họa nội dung học tập được nhúng trực tiếp
+                từ YouTube để người xem có thể phát ngay trên trang web.
+            </p>
+
+            <div class="video-container">
+                <iframe
+                    src="https://youtu.be/hDLHeCfP2Bg"
+                    title="Video YouTube giới thiệu sản phẩm học tập"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CHÂN TRANG -->
+    <footer>
+        <p>© 2026 - Trang giới thiệu thông tin cá nhân</p>
+        <p>Bản quyền thuộc về tác giả. Mọi quyền được bảo lưu.</p>
+        <p>Thiết kế và phát triển bởi Nguyễn Văn A</p>
+    </footer>
+
+</body>
+</html>
