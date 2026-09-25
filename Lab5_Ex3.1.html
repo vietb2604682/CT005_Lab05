@@ -3,108 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhiệm vụ 2.2 - Infographic và Video</title>
+
+    <title>Trang giới thiệu cá nhân</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
+            padding: 20px;
+            background: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background: #174ea6;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        section {
             background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 25px 0;
+            padding: 20px;
+            border-radius: 12px;
         }
 
-        h1 {
-            color: #1565c0;
+        h2 {
+            color: #174ea6;
         }
 
-        .description {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
-
-        .infographic {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .video-container {
-            position: relative;
+        iframe {
             width: 100%;
-            padding-bottom: 56.25%;
-            height: 0;
-            margin-top: 20px;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            aspect-ratio: 16 / 9;
             border: none;
-            border-radius: 8px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .pdf {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ccc;
         }
 
         footer {
-            margin-top: 30px;
-            padding-top: 15px;
-            border-top: 1px solid #ddd;
-            font-size: 14px;
-            color: #666;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
 
-        <h1>Nhiệm vụ 2.2: Infographic và Video</h1>
+<header>
+    <h1>TRANG GIỚI THIỆU CÁ NHÂN</h1>
+    <p>Chào mừng bạn đến với trang web của tôi!</p>
+</header>
 
-        <p class="description">
-            Infographic minh họa nội dung bài học kết hợp với video YouTube
-            giúp người học theo dõi và tìm hiểu kiến thức trực quan hơn.
-        </p>
+<section>
+    <h2>1. Thông tin cá nhân</h2>
+    <p><strong>Họ và tên:</strong> Dương Hoàng Việt</p>
+    <p><strong>Mã số sinh viên:</strong> B2604682</p>
+    <p><strong>Lớp:</strong> 01</p>
+    <p><strong>Môn học:</strong> CT005 - Nền tảng công nghệ số</p>
+</section>
 
-        <h2>1. Infographic</h2>
+<section>
+    <h2>2. Sản phẩm PDF</h2>
+    <p>Tài liệu thực hành Nhiệm vụ 1.2.</p>
 
-        <img
-            src="Lab05_Ex2.1.png"
-            alt="Infographic minh họa nội dung bài học"
-            class="infographic"
-        >
+    <iframe class="pdf" src="Lab05_Ex1.2.pdf"></iframe>
 
-        <h2>2. Video YouTube</h2>
+    <p>
+        <a href="Lab05_Ex1.2.pdf" target="_blank">
+            Mở hoặc tải tài liệu PDF
+        </a>
+    </p>
+</section>
 
-        <div class="video-container">
-            <iframe
-                src="https://www.youtube.com/embed/jAuHcn-GKZs"
-                title="Video YouTube - Nhiệm vụ 2.2"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-            </iframe>
-        </div>
+<section>
+    <h2>3. Infographic</h2>
+    <p>Sản phẩm infographic được thực hiện trong Nhiệm vụ 2.1.</p>
 
-        <footer>
-            <p>
-                © 2026 - Nhiệm vụ 2.2. Bản quyền thuộc về tác giả
-                và các chủ sở hữu nội dung tương ứng.
-            </p>
-        </footer>
+    <img src="Lab05_Ex2.1.png" alt="Infographic Lab05">
+</section>
 
-    </div>
+<section>
+    <h2>4. Video YouTube</h2>
+    <p>Video thực hành Nhiệm vụ 2.2.</p>
+
+    <iframe
+        src="https://youtu.be/jAuHcn-GKZs"
+        title="Video thực hành"
+        allowfullscreen>
+    </iframe>
+</section>
+
+<footer>
+    <p>© 2026 - Dương Hoàng Việt</p>
+</footer>
+
 </body>
 </html>
-```
+
